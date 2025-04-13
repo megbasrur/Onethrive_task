@@ -6,33 +6,12 @@ import Footer from "./footer";
 import PhoneShowcase from "./phone";
 import Image from '../assets/image4.png';
 import Logo from '../assets/logo.png'
+import Header from "./header";
 
 const LandingPage=()=>{
     return (
         <div className="bg-black text-white min-h-screen">
-          {/* Header/Navigation */}
-       {/* Header/Navigation */}
-<header className="py-4 px-6 md:px-16 flex items-center justify-between bg-black shadow-lg shadow-lime-400/10 rounded-b-xl backdrop-blur-md border-b border-gray-800">
-  <div className="flex items-center">
-    <img
-      src={Logo} // Make sure Company is imported, e.g. `import Company from '../assets/company.png'`
-      alt="OneThrive Logo"
-      className="h-35" // Adjust size as needed
-    />
-
-
-  </div>
-  <nav className="md:flex space-x-6">
-    <a href="#" className="text-white hover:text-lime-400">Home</a>
-    <a href="#" className="text-white hover:text-lime-400">About</a>
-    <a href="#" className="text-white hover:text-lime-400">Services</a>
-    <a href="#" className="text-white hover:text-lime-400">Contact</a>
-  </nav>
-  <button className="bg-lime-400 text-black font-semibold px-4 py-2 rounded-md hover:bg-lime-300 transition">
-    Get Started
-  </button>
-</header>
-
+        <Header />
         <HeroSection />
         <PhoneShowcase />
         <Features />
